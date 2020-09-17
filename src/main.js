@@ -17,7 +17,7 @@ Vue.use(Vuelazyload, {
 });
 Vue.config.productionTip = false;
 Vue.prototype.$http = axios;
-axios.defaults.baseURL = "http://192.168.199.47:3000";
+axios.defaults.baseURL = "http://servers.ngrok2.xiaomiqiu.cn";
 axios.interceptors.request.use((config) => {
   const token = getStore("token");
   if (token) {
